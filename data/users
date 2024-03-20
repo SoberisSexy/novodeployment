@@ -1,0 +1,22 @@
+{
+  "CREATE" "TABLE",
+  "Users" "(",
+  "UserID" "INT",
+  "IDENTITY(1",
+  "1)" "PRIMARY",
+  "KEY",
+  "Email" "NVARCHAR(255)",
+  "NOT" "NULL",
+  "UNIQUE",
+  "Password" "NVARCHAR(255)",
+  "NOT" "NULL",
+  "Username" "NVARCHAR(100)",
+  "NOT" "NULL",
+  "PhoneNumber" "NVARCHAR(20)",
+  "NOT" "NULL",
+  "ZipCode" "NVARCHAR(10)",
+  "NOT" "NULL",
+  ");"
+
+
+}

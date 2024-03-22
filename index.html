@@ -3,44 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Your Website</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: white;
+            text-align: center;
         }
 
         header, footer {
             background-color: lightblue;
-            text-align: center;
-            padding: 20px 0;
+            padding: 20px;
+            color: silver;
         }
 
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .button {
+        button {
             background-color: silver;
+            color: lightblue;
             border: none;
-            color: white;
             padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
+            margin: 10px;
             border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
         }
 
-        .spinner {
+        .spin {
             display: inline-block;
-            animation: spin 2s linear infinite;
+            animation: spin 3s infinite linear;
         }
 
         @keyframes spin {
@@ -52,49 +45,37 @@
                 transform: rotate(360deg);
             }
         }
-
-        .center {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .capital {
-            font-size: 100px;
-            margin: 0 10px;
-            display: inline-block;
-            transform-style: preserve-3d;
-            animation: spinCapitals 5s linear infinite;
-        }
-
-        @keyframes spinCapitals {
-            0% {
-                transform: rotateY(0deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <a href="createaccount.html" class="button">Join</a>
-        <a href="aboutus.html" class="button">About Us</a>
-        <a href="history.html" class="button">History</a>
+        <button onclick="location.href='createaccount.html'">Join</button>
+        <button onclick="location.href='aboutus.html'">About Us</button>
+        <button onclick="location.href='history.html'">History</button>
+        <button onclick="location.href='login.html'">Login</button>
     </header>
 
-    <div class="center">
-        <div class="capital">N</div>
-        <div class="capital">O</div>
-        <div class="capital">V</div>
-        <div class="capital">O</div>
-    </div>
+    <main>
+        <div class="spin">
+            <h1>N</h1>
+        </div>
+        <div class="spin" style="margin-top: 50px;">
+            <h1>O</h1>
+        </div>
+        <div class="spin" style="margin-top: 50px;">
+            <h1>V</h1>
+        </div>
+        <div class="spin" style="margin-top: 50px;">
+            <h1>O</h1>
+        </div>
+    </main>
 
     <footer>
-        <a href="createaccount.html" class="button">Join</a>
-        <a href="aboutus.html" class="button">About Us</a>
-        <a href="history.html" class="button">History</a>
+        <button onclick="location.href='createaccount.html'">Join</button>
+        <button onclick="location.href='aboutus.html'">About Us</button>
+        <button onclick="location.href='history.html'">History</button>
+        <button onclick="location.href='login.html'">Login</button>
     </footer>
 </body>
 </html>
+

@@ -1,105 +1,80 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOVO</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Your Website Title</title>
     <style>
         body {
-            background-color: white; /* Change body background color to white */
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
+            background-color: white;
         }
 
-        header {
-            background-color: rosegold; /* Change header background color to rose gold */
-            color: white;
-            padding: 50px;
+        header, footer {
+            background-color: lightblue;
             text-align: center;
-        }
-
-        nav {
-            background-color: grey;
-            text-align: center;
-        }
-
-            nav ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-
-                nav ul li {
-                    display: inline;
-                    margin-right: 10px;
-                }
-
-        .main-content {
             padding: 20px;
-            text-align: center;
         }
 
         footer {
-            background-color: rosegold; /* Change footer background color to rose gold */
-            color: white;
-            text-align: center;
-            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
 
-        .logo {
+        .button {
+            background-color: silver;
+            color: white;
+            border: none;
+            padding: 10px 20px;
             text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+            border: 2px solid silver;
         }
 
-            .logo img {
-                max-width: 100px;
-                max-height: 100px;
-                border-radius: 50%;
+            .button:hover {
+                background-color: white;
+                color: silver;
             }
 
-        .user-actions {
-            text-align: center;
+        .capitolN {
+            font-size: 100px;
+            color: silver;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
         }
     </style>
 </head>
-
 <body>
-
     <header>
-        <div class="logo">
-            <a href="login.html">
-                <img src="bank-novo6221.jpg" alt="NOVO Logo">
-            </a>
-        </div>
-        <div class="user-actions">
-            <a href="login.html">Login</a>
-        </div>
+        <a href="createaccount.html" class="button">Join</a>
+        <a href="aboutus.html" class="button">About Us</a>
+        <a href="history.html" class="button">History</a>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="createaccount.html">Join</a></li>
-            <!-- Add more navigation links as needed -->
-        </ul>
-    </nav>
-
-    <div class="main-content">
-        <h2>Novo (Latin for "new") represents a fresh beginning, a chance to redefine and revitalize. Embrace Novo as a symbol of renewal and embark on a journey towards a healthier, more vibrant you.</h2>
-        <img src=<img src="logo.jpeg" alt="NOVO Logo">
-
-    </div>
+    <div class="capitolN">N</div>
 
     <footer>
-        <p>&copy; 2024 The LifeStyle Experience., Inc. All rights reserved.</p>
+        <a href="createaccount.html" class="button">Join</a>
+        <a href="aboutus.html" class="button">About Us</a>
+        <a href="history.html" class="button">History</a>
     </footer>
-
 </body>
-
 </html>

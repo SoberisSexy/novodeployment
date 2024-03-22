@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Novo Recovery</title>
     <style>
         body {
             margin: 0;
@@ -13,9 +13,16 @@
         }
 
         header, footer {
-            background-color: lightblue;
+            background-color: #4287f5; /* Blue color */
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
+        }
+
+        .banner {
+            background-color: #f5f5f5; /* Light gray color */
+            text-align: center;
+            padding: 20px 0;
         }
 
         footer {
@@ -25,7 +32,7 @@
         }
 
         .button {
-            background-color: silver;
+            background-color: #4287f5; /* Blue color */
             color: white;
             border: none;
             padding: 10px 20px;
@@ -37,44 +44,30 @@
             transition-duration: 0.4s;
             cursor: pointer;
             border-radius: 12px;
-            border: 2px solid silver;
         }
 
             .button:hover {
-                background-color: white;
-                color: silver;
+                background-color: #3c6fc9; /* Darker blue color on hover */
             }
-
-        .capitolN {
-            font-size: 100px;
-            color: silver;
-            animation: spin 3s linear infinite;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotateY(0deg);
-            }
-
-            to {
-                transform: rotateY(360deg);
-            }
-        }
     </style>
 </head>
 <body>
+    <div class="banner">
+        <h1>NOVORECOVERY.COM</h1>
+    </div>
+
     <header>
         <a href="createaccount.html" class="button">Join</a>
         <a href="aboutus.html" class="button">About Us</a>
         <a href="history.html" class="button">History</a>
+        <a href="login.html" class="button">Login</a>
     </header>
-
-    <div class="capitolN">N</div>
 
     <footer>
         <a href="createaccount.html" class="button">Join</a>
         <a href="aboutus.html" class="button">About Us</a>
         <a href="history.html" class="button">History</a>
+        <a href="login.html" class="button">Login</a>
     </footer>
 </body>
 </html>

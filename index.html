@@ -10,30 +10,42 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: white;
-            text-align: center;
         }
 
         header, footer {
             background-color: lightblue;
+            text-align: center;
             padding: 20px;
-            color: silver;
+            position: relative;
         }
 
-        button {
-            background-color: silver;
-            color: lightblue;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            text-transform: uppercase;
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
-        .spin {
+        .button {
             display: inline-block;
+            padding: 10px 20px;
+            background-color: silver;
+            color: white;
+            text-decoration: none;
+            border: 2px solid silver;
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+            .button:hover {
+                background-color: white;
+                color: silver;
+            }
+
+        .spinner {
+            font-size: 60px;
             animation: spin 3s infinite linear;
+            display: inline-block;
         }
 
         @keyframes spin {
@@ -49,33 +61,23 @@
 </head>
 <body>
     <header>
-        <button onclick="location.href='createaccount.html'">Join</button>
-        <button onclick="location.href='aboutus.html'">About Us</button>
-        <button onclick="location.href='history.html'">History</button>
-        <button onclick="location.href='login.html'">Login</button>
+        <a href="createaccount.html" class="button">Join</a>
+        <a href="aboutus.html" class="button">About Us</a>
+        <a href="history.html" class="button">History</a>
+        <a href="login.html" class="button">Login</a>
+        <div class="spinner">N</div>
+        <div class="spinner">O</div>
+        <div class="spinner">V</div>
+        <div class="spinner">O</div>
     </header>
 
-    <main>
-        <div class="spin">
-            <h1>N</h1>
-        </div>
-        <div class="spin" style="margin-top: 50px;">
-            <h1>O</h1>
-        </div>
-        <div class="spin" style="margin-top: 50px;">
-            <h1>V</h1>
-        </div>
-        <div class="spin" style="margin-top: 50px;">
-            <h1>O</h1>
-        </div>
-    </main>
-
     <footer>
-        <button onclick="location.href='createaccount.html'">Join</button>
-        <button onclick="location.href='aboutus.html'">About Us</button>
-        <button onclick="location.href='history.html'">History</button>
-        <button onclick="location.href='login.html'">Login</button>
+        <div class="spinner">N</div>
+        <div class="spinner">O</div>
+        <div class="spinner">V</div>
+        <div class="spinner">O</div>
     </footer>
 </body>
 </html>
+
 

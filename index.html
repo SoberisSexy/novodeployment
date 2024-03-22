@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novo</title>
+    <title>Novo Recovery</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
+            background-color: white; /* Changed background color to sky blue */
         }
 
         header, footer {
-            background-color: deepskyblue;
+            background-color: deepskyblue; /* anged header and footer background color to sky blue */
             text-align: center;
             padding: 20px;
         }
@@ -43,11 +39,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            height: calc(100vh - 200px); /* Adjusted height to accommodate header and footer */
         }
 
         .spinner {
-            font-size: 150px;
+            font-size: 120px;
             color: silver;
             animation: spin 3s infinite linear;
             display: inline-block;
@@ -65,11 +61,12 @@
     </style>
 </head>
 <body>
+    <h1 style="text-align: center;">Novo Recovery</h1> <!-- Added Novo Recovery above the header as the title -->
     <header>
-        <a href="createaccount.html" class="button-link">Join</a>
-        <a href="aboutus.html" class="button-link">About Us</a>
-        <a href="history.html" class="button-link">History</a>
-        <a href="login.html" class="button-link">Login</a>
+        <a href="index.html" class="button">Home</a>
+        <a href="createaccount.html" class="button">Join</a>
+        <a href="aboutus.html" class="button">About Us</a>
+        <a href="login.html" class="button">Login</a>
     </header>
 
     <div class="spinner-container">
@@ -79,25 +76,12 @@
         <div class="spinner">O</div>
     </div>
 
-    <div class="spinner-container">
-        <div class="spinner">N</div>
-        <div class="spinner">O</div>
-        <div class="spinner">V</div>
-        <div class="spinner">O</div>
-   </div>
-
+    <footer>
+        <a href="index.html" class="button">Home</a>
+        <a href="createaccount.html" class="button">Join</a>
+        <a href="aboutus.html" class="button">About Us</a>
+        <a href="login.html" class="button">Login</a>
+    </footer>
 </body>
 </html>
-
-
-<footer>
-    <a href="createaccount.html" class="button-link">Join</a>
-    <a href="aboutus.html" class="button-link">About Us</a>
-    <a href="history.html" class="button-link">History</a>
-    <a href="login.html" class="button-link">Login</a>
-
-</footer>
-</body>
-</html>
-
 

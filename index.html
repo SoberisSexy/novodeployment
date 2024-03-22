@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novo Recovery</title>
+    <title>Your Website Title</title>
     <style>
         body {
             margin: 0;
@@ -13,14 +13,7 @@
         }
 
         header, footer {
-            background-color: #4287f5; /* Blue color */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .banner {
-            background-color: #f5f5f5; /* Light gray color */
+            background-color: lightblue;
             text-align: center;
             padding: 20px 0;
         }
@@ -32,42 +25,76 @@
         }
 
         .button {
-            background-color: #4287f5; /* Blue color */
-            color: white;
+            background-color: silver;
             border: none;
+            color: white;
             padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
-            transition-duration: 0.4s;
             cursor: pointer;
-            border-radius: 12px;
+            border-radius: 5px;
         }
 
-            .button:hover {
-                background-color: #3c6fc9; /* Darker blue color on hover */
+        .spinner {
+            display: inline-block;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
             }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .capital {
+            font-size: 100px;
+            margin: 0 10px;
+            display: inline-block;
+            transform-style: preserve-3d;
+            animation: spinCapitals 5s linear infinite;
+        }
+
+        @keyframes spinCapitals {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <h1>NOVORECOVERY.COM</h1>
-    </div>
-
     <header>
         <a href="createaccount.html" class="button">Join</a>
         <a href="aboutus.html" class="button">About Us</a>
         <a href="history.html" class="button">History</a>
-        <a href="login.html" class="button">Login</a>
     </header>
+
+    <div class="center">
+        <div class="capital">N</div>
+        <div class="capital">O</div>
+        <div class="capital">V</div>
+        <div class="capital">O</div>
+    </div>
 
     <footer>
         <a href="createaccount.html" class="button">Join</a>
         <a href="aboutus.html" class="button">About Us</a>
         <a href="history.html" class="button">History</a>
-        <a href="login.html" class="button">Login</a>
     </footer>
 </body>
 </html>

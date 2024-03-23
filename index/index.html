@@ -9,11 +9,11 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: white; /* Changed background color to sky blue */
+            background-color: #FFFFFF; /* white*/
         }
 
         header, footer {
-            background-color: deepskyblue; /* anged header and footer background color to sky blue */
+            background-color: #0000FF; /* SBlue */
             text-align: center;
             padding: 20px;
         }
@@ -39,7 +39,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100vh - 200px); /* Adjusted height to accommodate header and footer */
+            height: 100%;
         }
 
         .spinner {
@@ -58,10 +58,29 @@
                 transform: rotate(360deg);
             }
         }
+
+        .title {
+            color: silver;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #0000FF; /*Blue */
+            padding: 20px;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Novo Recovery</h1> <!-- Added Novo Recovery above the header as the title -->
+    <div class="title">Novo Recovery</div>
     <header>
         <a href="index.html" class="button">Home</a>
         <a href="createaccount.html" class="button">Join</a>
@@ -77,11 +96,7 @@
     </div>
 
     <footer>
-        <a href="index.html" class="button">Home</a>
-        <a href="createaccount.html" class="button">Join</a>
-        <a href="aboutus.html" class="button">About Us</a>
-        <a href="login.html" class="button">Login</a>
+        The LifeStyle Experience, Inc. Contact: kdj@novorecovery.com
     </footer>
 </body>
 </html>
-
